@@ -12,3 +12,6 @@ fs.appendFileSync(filePath, `ACTIONS_RUNTIME_TOKEN=${process.env.ACTIONS_RUNTIME
 fs.appendFileSync(filePath, `GITHUB_RUN_ID=${process.env.GITHUB_RUN_ID}${os.EOL}`, {
     encoding: 'utf8'
 })
+fs.appendFileSync(filePath, `ACTIONS_STEP_DEBUG=true`, {
+    encoding: 'utf8'
+})
